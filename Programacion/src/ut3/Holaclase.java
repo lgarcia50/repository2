@@ -15,7 +15,7 @@ public class Holaclase {
 		System.out.println("Hola clase de primero de informatica otra vez");
 		System.out.println("Hola clase, esto es un cambio para guardar nueva version");
 		
-		System.out.println("Otro cambio");
+		System.out.println("Otros dos  cambio");
 		 System.out.println("Si quiere poner otros datos pulse(1), si quiere salir pulse(0)");
 		 salir = sc.nextInt();
 		while(salir==0);

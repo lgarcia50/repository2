@@ -11,7 +11,9 @@ public class Holaclase {
 	    System.out.println("Cuantos somos en clase:");
 	    clase = sc.nextInt();
 		System.out.println("Hola clase de primero de informatica otra vez");
-		System.out.println("Hola clase, esto es un cambio para kguardar nueva version");
+		System.out.println("Hola clase, esto es un cambio para guardar nueva version");
+		
+		System.out.println("Otro cambio");
 
 	}
 

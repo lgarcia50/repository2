@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+package UT6;
+import java.util.Scanner;
+import java.util.Arrays;
+/**
+ * @author lucia
+ *
+ */
+public class Semana6 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		String p1 ="";
+		String p2 ="";
+		
+		System.out.println("Escribe p1:");
+		p1=sc.nextLine().trim();
+		System.out.println("Escribe p2:");
+		p2=sc.nextLine().trim();
+		
+		if(p1.length()!=p2.length()) {
+			System.out.println("NO");
+		}else {
+			char[]c1=p1.toCharArray();
+			char[]c2= p2.toCharArray();
+			
+			Arrays.sort(c1);
+			Arrays.sort(c2);
+			
+			if (Arrays.equals(c1, c2)) {
+				System.out.println("Si");
+			}else
+				 System.out.println("no");
+			}
+		}
+		}
+		
+		

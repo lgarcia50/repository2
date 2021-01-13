@@ -26,7 +26,7 @@ public class Semana6 {
 		if(p1.length()!=p2.length()) {
 			System.out.println("NO");
 		}else {
-			char[] c1=p1.toCharArray();
+			char[]c1=p1.toCharArray();
 			char[]c2= p2.toCharArray();
 			
 			Arrays.sort(c1);

@@ -1,0 +1,40 @@
+@ -15,19 +15,21 @@ public class Semana6 {
+	 */
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int salir=0;
+		String p1 ="";
+		String p2 ="";
+		
+		while (true ) {
+		System.out.println("Escribe p1:");
+		p1=sc.nextLine().trim();
+		System.out.println("Escribe p2:");
+		p2=sc.nextLine().trim();
+		
+				
+		if(p1.length()!=p2.length()) {
+			System.out.println("NO");
+		}else {
+			char[]c1=p1.toCharArray();
+			char[]c2= p2.toCharArray();
+			char[]c2=p2.toCharArray();
+			
+			Arrays.sort(c1);
+			Arrays.sort(c2);
+@ -36,8 +38,14 @@ public class Semana6 {
+				System.out.println("Si");
+			}else
+				 System.out.println("no");
+			}
+			
+		System.out.println("Si quiere poner otros datos pulse(1), si quiere salir pulse(0)");
+		 salir =sc.nextInt();
+		while(salir==0);
+		 
+		}
+}
+		}
+		
+
+}	

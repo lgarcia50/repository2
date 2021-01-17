@@ -22,7 +22,7 @@
 			
 			Arrays.sort(c1);
 			Arrays.sort(c2);
-@ -36,8 +38,14 @@ public class Semana6 {
+        if (Arrays.equals(c1, c2)) {
 				System.out.println("Si");
 			}else
 				 System.out.println("no");

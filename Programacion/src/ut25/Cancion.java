@@ -10,7 +10,7 @@ package ut25;
 public class Cancion {
 	private String titulo;
 	private String artista;
-	private int duracion;
+	private double duracion;
 	
 	/**
 	 * Constructor vacio
@@ -22,10 +22,10 @@ public class Cancion {
 	 * @param artista Nombre del artista 
 	 * @param duracion Duracion de la cancion 
 	 */
-	public Cancion(String titulo, String artista, int d) {
+	public Cancion(String titulo, String artista, float duracion) {
 		this.titulo=titulo;
 		this.artista=artista;
-		this.duracion= d;
+		this.duracion= duracion;
 	}
 	/**
 	 * Metodo reproducir
@@ -47,31 +47,26 @@ public class Cancion {
 	 * @return
 	 */
 	public String getTitulo() {
-	return titulo;
-}
-public String getArtista() {
-	return artista;
-}
-public int getDuracion() {
-	return duracion;
-}
-//Setters privado para todos los atributos.
-public void setTitulo(String t) {
-	if (t.equals(""))
-		this.titulo= "Sin titulo";
-	else 
-		this.titulo=t;
-}
-public void setArtista(String a) {
-	if (a.equals(""))
-		this.artista= "Sin artista";
-	else 
-		this.artista=a;
-}
-public void setDuracionMinutos(int d) {
-	if (d<0)
-		this.duracion= 0;
-	else 
-		this.duracion=d;
-}
-}
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getArtista() {
+		return artista;
+	}
+
+	public void setArtista(String artista) {
+		this.artista = artista;
+	}
+
+	public double getDuracion() {
+		return duracion;
+	}
+
+	public void setDuracion(float duracion) {
+		this.duracion = duracion;
+	}
+	}

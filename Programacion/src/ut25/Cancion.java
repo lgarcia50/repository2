@@ -18,8 +18,8 @@ public class Cancion {
 	public Cancion() {}
 	/**
 	 * Constructor con parametos
-	 * @param titulo Nombre de la cancion 
-	 * @param artista Nombre del artista 
+	 * @param titulo Nombre cancion 
+	 * @param artista Nombre artista 
 	 * @param duracion Duracion de la cancion 
 	 */
 	public Cancion(String titulo, String artista, float duracion) {

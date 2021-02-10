@@ -14,24 +14,30 @@ public class Ejercicio25  {
 
 	public static void main(String[] args) {
 		int opcion;
-		ArrayList <Playlist> playlists = new ArrayList <Playlist>();
+		ArrayList <Playlist> playlist = new ArrayList <Playlist>();
 		ArrayList <Cancion>canciones = new ArrayList <Cancion>();
 		do {
 			opcion=menu();
 			switch(opcion) {
-			case 0:adios();break;
-			case 1:crearPlaylist(playlists);;break;
-			case 2:anyadirCancion(playlists,canciones);break;
-			case 3:verCancion(playlists);;break;
-			case 4:totalPlaylist(playlists);;break;
-			case 5:reproducirPlaylist(playlists);;break;
+			case 0:adios();
+			break;
+			case 1:crearPlaylist(playlist);
+			break;
+			case 2:anyadirCancion(playlist,canciones);
+			break;
+			case 3:verCancion(playlist);
+			break;
+			case 4:totalPlaylist(playlist);
+			break;
+			case 5:reproducirPlaylist(playlist); 
+			break;
 			
 			}
 		} while (opcion!=0);
 
 
 
-		Cancion cancion1=new Cancion();
+		Cancion cancion1=new Cancion("Ponte pa mi","Justin Quiles",4);
 
 		System.out.println(cancion1.reproducir()); 
 		
@@ -46,15 +52,15 @@ public class Ejercicio25  {
 	public static int menu () {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bienvenidos a mi playlist");
-		System.out.println("Estas son las opciones que tienes:");
+		System.out.println("¿Que opcion vas a escoger?");
 		System.out.println("1. Crear Playlist");
 		System.out.println("2. Añadir una cancion a una Playlist.");
 		System.out.println("3. Ver una cancion en una Playlist");
-		System.out.println("4. Ver las canciones totales de una Playlist");
-		System.out.println("5. Ver lo que dura una Playlist");
+		System.out.println("4. Ver cuantas  canciones tiene  una Playlist");
+		System.out.println("5. Ver el tiempo que dura la Playlist");
 		System.out.println("6. Reproducir una Playlist");
 		System.out.println("7. Reproducir una cancion de una Playlist");
-		System.out.println("8. Limpiar una Playlist de canciones");
+		System.out.println("8. Limpiar una Playlist");
 		System.out.println("9. Eliminar una cancion de una Playlist");
 		System.out.println("10.Buscar por titulo.");
 
@@ -132,14 +138,14 @@ public class Ejercicio25  {
 		System.out.println("Que Playlist quieres reproducir?");
 		mostrarPlaylists(playlists);
 		int opcionP=sc.nextInt();
-		System.out.println("Que cancion quieres que te reproduzaca?");
+		System.out.println("Que cancion quieres que te reproduzca?");
 		mostrarCancionesPlaylist(canciones);
 		int opcionC=sc.nextInt();
 		System.out.println(playlists.get(opcionP).reproducirCancion(opcionC));
 	}
 	public static void borrarContenidoPlaylist(ArrayList <Playlist> playlists) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Que Playlist quieres dejarla vacia?");
+		System.out.println("Que Playlist quieres dejar vacia?");
 		mostrarPlaylists(playlists);
 		int opcion=sc.nextInt();
 		playlists.get(opcion).limpiarPlaylist();
@@ -174,13 +180,13 @@ public class Ejercicio25  {
 			System.out.println(i+". "+canciones.get(i).getTitulo());
 		}
 	}
-	public static void mostrarPlaylists(ArrayList <Playlist> playlists) {
+	public static void mostrarPlaylist(ArrayList <Playlist> playlists) {
 		for (int i = 0; i < playlists.size(); i++) {
 			System.out.println(i+". "+playlists.get(i).getNombrePlaylist());
 		}
 	}
 	public static void adios() {
-		System.out.println("Muchas gracias por usar esta aplicacion.");
+		System.out.println("gracias por usar Spotify.");
 	}
 
 
